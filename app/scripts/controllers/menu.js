@@ -30,4 +30,13 @@ angular.module('udaciMealsApp')
         url: 'http://allrecipes.com/recipe/10141/outrageous-chocolate-chip-cookies/',
       }
     ];
+
+    this.increment = function(item) {
+      // item.rating += 1;
+      item.rating = ((item.rating * 10) + 1 ) / 10;
+    };
+    this.decrement = function(item) {
+      // item.rating -= 1;
+      item.rating = ((item.rating * 10) - 1 ) / 10;
+    };
   });
