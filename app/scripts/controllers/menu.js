@@ -12,6 +12,6 @@ angular.module('udaciMealsApp')
     this.id = 'chipotle-shrimp-wrap';
     this.name = 'Chipotle Shrimp Wrap';
     this.img = 'chipotle-shrimp-wrap.jpg';
-    this.rating = 4.2;
+    this.rating = 4.6;
     this.url = 'https://www.eatclub.com/s/dish/chipotle-shrimp-vurvur/';
   });
