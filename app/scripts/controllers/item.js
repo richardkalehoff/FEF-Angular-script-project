@@ -8,6 +8,9 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('ItemCtrl', function () {
-
-  });
+  .controller('ItemCtrl', ['$stateParams', 'foodFinder', function ($stateParams, foodFinder) {
+    var vm = this;
+    foodFinder.getItem($stateParams.id).then(function(data) {
+      vm.data = data;
+    });
+  }]);
