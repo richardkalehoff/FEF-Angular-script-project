@@ -2,7 +2,7 @@
   <div class="items-container">
     <div class="col-md-4">
       <h4>{{menu.name}}</h4>
-      <p>Rating: {{menu.rating}} <span ng-if="menu.rating > 4.0"> - People love this item!</span></p>
+      <p>Rating: {{menu.rating}} <span ng-class="{highlight: menu.rating > 4.5}"> - People love this item!</span></p>
       <p>Image: {{menu.img}}</p>
     </div>
   </div>
