@@ -86,3 +86,7 @@ body {
   color: green;
   font-style: italic;
 }
+
+.item__image {
+  max-width: 100%;
+}
