@@ -12,5 +12,5 @@ angular.module('udaciMealsApp')
     this.id = 'strawberry-pudding';
     this.name = 'Strawberry Pudding';
     this.img = 'strawberry-pudding.jpg';
-    this.rating = 4.6;
+    this.rating = 4.3;
   });
