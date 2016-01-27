@@ -3,7 +3,11 @@
     <div class="col-md-4">
       <img class="item__image" ng-src="images/{{item.img}}" alt="{{item.name}}">
       <h4>{{item.name}}</h4>
-      <p>Rating: {{item.rating}} <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span></p>
+      <p>
+        Rating: {{item.rating}} <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this item!</span>
+        <button ng-click="menu.increment(item)">+</button>
+        <button ng-click="menu.decrement(item)">-</button>
+      </p>
     </div>
   </div>
 </div>
