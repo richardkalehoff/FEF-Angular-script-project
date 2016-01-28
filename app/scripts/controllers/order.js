@@ -8,6 +8,6 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('OrderCtrl', function () {
-    
-  });
+  .controller('OrderCtrl', ['orderManager', function (orderManager) {
+    this.list = orderManager.getOrders();
+  }]);
